@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Nav from '../components/Nav'
-
-
+import Nav from "../components/Nav";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -12,6 +11,22 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
         <link
           href='../asset/fonts/PlusJakartaSans-Medium.woff'
+          rel='stylesheet'
+        />
+        <link
+          href='../asset/fonts/PlusJakartaSans-Regular.woff'
+          rel='stylesheet'
+        />
+        <link
+          href='../asset/fonts/PlusJakartaSans-Regular.woff2'
+          rel='stylesheet'
+        />
+        <link
+          href='../asset/fonts/PlusJakartaSans-Light.woff'
+          rel='stylesheet'
+        />
+        <link
+          href='../asset/fonts/PlusJakartaSans-Light.woff2'
           rel='stylesheet'
         />
         <link
@@ -27,19 +42,36 @@ export default function Home() {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-darkPurple text-primary'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <div className='max-w-3xl mx-auto'>
+      <main className='bg-darkPurple text-primary relative overflow-hidden'>
+        {/* ====================== side designs ======================= */}
+
+        <div class='relative h-full w-full z-0' aria-hidden='true'>
+          <div class='bg-black'>
+            <img
+              className='absolute scale-75 -left-20'
+              src='/right-art.png'
+              alt=''
+            />
+            <img
+              className='absolute scale-75 -right-20'
+              src='/left-art.png'
+              alt=''
+            />
+          </div>
+        </div>
+        <div className='mx-auto px-4 sm:px-6 lg:px-8 z-3 relative'>
+          <div className='mx-auto '>
             <Nav />
-            <div className='text-center'>
-              <h1 className='text-6xl uppercase'>
+
+            <div className='text-center port-container'>
+              <h1 className='text-[3.5rem] md:text-[4.1rem] uppercase md:leading-[4.5rem] leading-[4.1rem]'>
                 A design agency with a twist
               </h1>
-              <p>Design subscriptions to scale your besiness</p>
-              <button
-                type='button'
-                className='inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
-                See plans
+              <p className='mt-3 text-xl font-light'>
+                Design subscriptions to scale your besiness
+              </p>
+              <button type='button' className='port-button'>
+                Give me a holla 🤙🏾
               </button>
             </div>
           </div>
