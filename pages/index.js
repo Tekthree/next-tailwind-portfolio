@@ -42,41 +42,37 @@ export default function Home() {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-darkPurple text-primary relative overflow-hidden'>
-        {/* ====================== side designs ======================= */}
 
-        <div class='relative h-full w-full z-0' aria-hidden='true'>
-          <div class='bg-black'>
-            <img
-              className='absolute scale-75 -left-20'
-              src='/right-art.png'
-              alt=''
-            />
-            <img
-              className='absolute scale-75 -right-20'
-              src='/left-art.png'
-              alt=''
-            />
-          </div>
-        </div>
-        <div className='mx-auto px-4 sm:px-6 lg:px-8 z-3 relative'>
-          <div className='mx-auto '>
-            <Nav />
+      <body>
+        <main className='bg-darkPurple text-primary relative overflow-hidden'>
+          {/* ====================== side designs ======================= */}
 
-            <div className='text-center port-container'>
-              <h1 className='text-[3.5rem] md:text-[4.1rem] uppercase md:leading-[4.5rem] leading-[4.1rem]'>
-                A design agency with a twist
-              </h1>
-              <p className='mt-3 text-xl font-light'>
-                Design subscriptions to scale your besiness
-              </p>
-              <button type='button' className='port-button'>
-                Give me a holla 🤙🏾
-              </button>
+          <div class='relative z-0' aria-hidden='true'>
+            <div class='bg-black'>
+              <img className='left-design' src='/right-art.png' alt='' />
+              <img className='right-design' src='/left-art.png' alt='' />
             </div>
           </div>
-        </div>
-      </main>
+          <div className='mx-auto px-4 sm:px-6 lg:px-8 z-3 relative'>
+            <div className='mx-auto '>
+              {/* ================================== Nav Bar ============================ */}
+              <Nav />
+
+              <div className='text-center port-container'>
+                <h1 className='text-[3.5rem] md:text-[4.1rem] uppercase md:leading-[4.5rem] leading-[4.1rem]'>
+                  A design agency with a twist
+                </h1>
+                <p className='mt-3 text-xl font-light'>
+                  Design subscriptions to scale your besiness
+                </p>
+                <button type='button' className='port-button'>
+                  Give me a holla 🤙🏾
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </body>
     </div>
   );
 }
