@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -45,10 +45,11 @@ export default function Home() {
 
       <body>
         <main className='bg-darkPurple text-primary relative overflow-hidden'>
+          
           {/* ====================== side designs ======================= */}
 
-          <div class='relative z-0' aria-hidden='true'>
-            <div class='bg-black'>
+          <div className='relative z-0' aria-hidden='true'>
+            <div className='bg-black'>
               <img className='left-design' src='/right-art.png' alt='' />
               <img className='right-design' src='/left-art.png' alt='' />
             </div>

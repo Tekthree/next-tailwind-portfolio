@@ -128,3 +128,18 @@ h2,
 h3 {
   font-family: mortendextra_bold;
 }
+
+
+.sticky-nav{
+  position: fixed;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 29px;
+
+}
